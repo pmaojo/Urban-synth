@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "./dist",
+    "rootDir": "..",
+    "module": "commonjs",
+    "target": "es2020",
+    "types": ["node"],
+    "verbatimModuleSyntax": false
+  },
+  "include": ["../src/beatGenerator/**/*", "./**/*.ts"],
+  "exclude": ["../node_modules", "./dist"]
+}
